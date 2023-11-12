@@ -1,0 +1,25 @@
+.holiday{
+    &-button-container{
+        padding-top: 24px;
+    }
+    &-button{
+        padding: 7px 14px;
+        border-radius: 20px;
+        @include bg($whiteColor);
+        font-weight: 400;
+        font-size: 16px;
+        color: #000000;
+        transition: all 0.2 linear;
+        border: transparent;
+        margin-right: 50px;
+        &:hover{
+            @include bg(#E5E5E5);
+        }
+        &.isActive{
+            @include bg(#E5E5E5);
+        }
+    }
+    &-date-container{
+
+    }
+}

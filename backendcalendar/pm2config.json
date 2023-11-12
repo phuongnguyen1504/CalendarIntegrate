@@ -1,0 +1,8 @@
+{
+  "name": "CNoteAPIlocal",
+  "script": "index.js",
+  "watch": true,
+  "ignore_watch": ["node_modules", "swagger", "tokenFile/outlook-token.json", "google-token.json"],
+  "log": "../log.txt",
+    "ignore": ["*.test.txt", "tokenFile/*"]
+}

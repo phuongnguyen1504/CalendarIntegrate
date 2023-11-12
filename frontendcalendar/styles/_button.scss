@@ -1,0 +1,35 @@
+.b-primary{
+    background-color: $thirdColor;
+    color: white;
+    display: block;
+    padding-top: -3px;
+    &:hover{
+        color: white;
+        background-color: $purpleColor;
+    }
+}
+.b-datetime{
+    border: 1px solid #c0c4d6;
+    border-radius: 5px;
+    margin: 1px 0;
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem !important;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    height: auto !important;
+    margin-top: 7px !important;
+    width: 100%;
+}
+.b-date{
+    text-align: start;
+}

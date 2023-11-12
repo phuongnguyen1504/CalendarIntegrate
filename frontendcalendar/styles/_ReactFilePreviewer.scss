@@ -1,0 +1,31 @@
+.preview-wrapper {
+    position: relative;
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid black;
+    border-top: 0;
+    height: auto;
+    overflow: auto;
+}
+
+
+
+
+
+
+.preview-wrapper .preview-icons {
+    top: 0;
+    left: 50%;
+}
+
+.preview-wrapper .preview-content {
+    margin-top: 50px;
+}
+
+.preview-wrapper .preview-content canvas {
+    margin: 0 auto 15px;
+    box-shadow: 0px 0px 6px #111;
+}
+
+.preview-wrapper .preview-file .preview-pdf-page .annotationLayer {
+    display: none;
+}

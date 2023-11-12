@@ -1,0 +1,32 @@
+.header{
+    border-bottom: 1px solid #00000033;
+    &-logo{
+        padding-right: 30px;
+        position: relative;
+        &::before{
+            content: "";
+            width: 1px;
+            height: 14px;
+            background-color: #cccccc;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+        }
+    }
+    &-link{
+        line-height: 20px;
+        font-weight: 700;
+        color: #666666;
+        font-size: 14px;
+        margin-right: 32px;
+    }
+    &-login{
+        display: block;
+        margin-left: auto;
+    }
+}
+
+.css-26l3qy-menu{
+    z-index: 999 !important;
+}

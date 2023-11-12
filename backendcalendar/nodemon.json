@@ -1,0 +1,3 @@
+{   
+    "ignore": ["tokenFile/*.json", "README"] 
+}

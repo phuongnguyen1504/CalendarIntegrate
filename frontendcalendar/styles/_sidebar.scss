@@ -1,0 +1,154 @@
+.sidebar {
+  height: 100vh;
+  width: 80px;
+  background-color: $thirdColor;
+  display: flex;
+  flex-direction: column;
+  padding: 36px 28px;
+  transition: all 0.25s linear;
+  position: fixed;
+  z-index: 99;
+  &-top {
+    width: 100%;
+    height: 30px;
+  }
+  &-menu,
+  &-bottom {
+    width: 100%;
+    margin-top: 100px;
+    padding: 0;
+    & > li {
+      margin-bottom: 40px;
+    }
+  }
+  &-bottom {
+    margin-top: auto;
+  }
+  &-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    color: $whiteColor;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    width: 80%;
+    & > img {
+      margin-right: 15px;
+    }
+    &:hover {
+      color: $whiteColor;
+    }
+    &-title {
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.25s linear;
+    }
+  }
+}
+
+.isOpen.sidebar {
+  width: 255px;
+  .sidebar-button-title {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@include minWidth(768px) {
+  .isOpen.sidebar + .container-content.isAdmin {
+    width: calc(100% - 255px);
+  }
+}
+
+.sidebar .dropdown-toggle {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  & > img {
+    margin-right: 15px;
+  }
+}
+
+
+.btn-check:checked + .btn-dark:focus,
+.btn-check:active + .btn-dark:focus,
+.btn-dark:active:focus,
+.btn-dark.active:focus,
+.show > .btn-dark.dropdown-toggle:focus {
+  box-shadow: none;
+}
+.btn-check:checked + .btn-dark, .btn-check:active + .btn-dark, .btn-dark:active, .btn-dark.active, .show > .btn-dark.dropdown-toggle{
+    background-color: transparent;
+    border: none;
+}
+.dropdown-toggle::after {
+    display: none;
+}
+
+
+.dropdown:hover .dropdown-menu{
+    opacity: 1;
+    visibility: visible;
+}
+
+.sidebar .dropdown-menu {
+    transition: all 0.15s linear;
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    // inset: 0 !important;
+    transform: translate(0,0) !important;
+    top: 0 !important;
+    left: 50% !important;
+}
+
+.isOpen.sidebar .dropdown-menu{
+    left: 110% !important;
+}
+
+.MobileSidebar-container {
+  position: absolute;
+  z-index: 98;
+  width: 500px;
+  min-height: 100vh;
+  background: $thirdColor;
+  display: flex;
+
+  & > ul {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 12rem;
+
+    li {
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    color: #fff;
+    font-size: 3rem;
+    cursor: pointer;
+  }
+
+  & > .sidebar-widgets {
+    width: 80% !important;
+    height: fit-content;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 0 auto;
+
+    & > li {
+      text-align: center;
+    }
+  }
+}

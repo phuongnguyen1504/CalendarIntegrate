@@ -1,0 +1,22 @@
+{
+    "authOptions":
+        {
+            "clientId": "1c5c63b9-0aa3-4a7b-92a4-5086663fac8f",
+            "authority": "https://login.microsoftonline.com/da6567ff-452d-4b86-95a2-dcd96720f222"
+        },
+    "request":
+    {
+        "authCodeUrlParameters": {
+            "scopes": ["user.read", "Calendars.ReadWrite", "offline_access"],
+            "redirectUri": "http://localhost:8080/redirect"
+        },
+        "tokenRequest": {
+            "redirectUri": "http://localhost:8080/redirect",
+            "scopes": ["user.read", "Calendars.ReadWrite", "offline_access"]
+        }
+    },
+    "resourceApi":
+    {
+        "endpoint": "https://graph.microsoft.com/v1.0/me"
+    }
+}

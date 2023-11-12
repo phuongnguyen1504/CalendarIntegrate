@@ -1,0 +1,17 @@
+.login{
+    max-width: 700px;
+    padding: 80px 0;
+    &-title{
+        font-size: 38px;
+        font-weight: 800;
+    }
+    &-subtext{
+        font-size: 16px;
+        color: black;
+    }
+    &-sublink{
+        font-weight: 700;
+        font-size: 16px;
+        color: black;
+    }
+}

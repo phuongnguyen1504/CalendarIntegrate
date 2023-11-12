@@ -1,0 +1,73 @@
+// mobile
+@media screen and (max-width: 1023px) {
+  .navbar-nav .nav-item {
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+  .btn-tool {
+    margin-left: auto;
+  }
+  .header-tool {
+    justify-content: flex-end;
+    /* margin-left: auto; */
+    flex-direction: row-reverse;
+    margin-left: 0 !important;
+  }
+  .MuiBox-root {
+    min-width: none !important;
+  }
+  .collapse.navbar-collapse {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .Setting-desktop {
+    display: none !important;
+    margin: 10px !important;
+  }
+  .Setting-mobile {
+    display: block !important;
+  }
+  .DetailProfile-desktop {
+    display: none !important;
+  }
+  .DetailProfile-mobile {
+    display: block !important;
+  }
+}
+
+.css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
+  width: 100% !important;
+}
+
+.navbar-nav .nav-item {
+  width: 30%;
+  margin-right: 30px;
+}
+
+.MuiIconButton-sizeSmall {
+  min-width: none !important;
+}
+
+.header-tool {
+  margin-left: auto;
+  display: flex;
+}
+
+.header-setting {
+  margin-left: 12px;
+}
+
+.Setting-desktop {
+  display: block;
+  margin: 10px !important;
+}
+.Setting-mobile {
+  display: none;
+}
+.DetailProfile-desktop {
+  display: block;
+}
+.DetailProfile-mobile {
+  display: none;
+}
